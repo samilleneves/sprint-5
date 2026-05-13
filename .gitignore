@@ -1,0 +1,6 @@
+htmlcss_desafio3_vazio.zip
+htmlcss_desafio3.zip
+# Ignore all .pub files
+*.pub
+# Ignore all .txt files
+*.txt
