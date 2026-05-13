@@ -1,0 +1,147 @@
+<!DOCTYPE html />
+
+<html lang="pt-BR">
+
+<head>
+    <meta name="author" content="Samille Neves" />
+    <meta name="description" content="Conheça a última geração da Ford Ranger: visual clássico, tecnologia de ponta." />
+    <meta name="keywords" content="Ford, Brasil, Ranger, carro, picape, novidade">
+
+    <title>Ford Brasil | Lançamento</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/ford_footer_icon.svg" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style-lancamento.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1 hidden>Lançamento — Ford Brasil</h1>
+
+        <a href="index.html">
+            <img src="../img/ford_head_icon.svg" alt="Logo da Ford" id="head-icon" />
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="lancamento.html">Lançamento</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <iframe
+            src="https://www.youtube.com/embed/vQsryuNmsL0?si=_TbEM59lwK5v4V6P"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+            </iframe>
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                    <th>
+                        <img src="../img/xl_cabine.jpg" alt="XL Cabine" class="th-img" />
+                    </th>
+                    <th>
+                        <img src="../img/xls_diesel.jpg" alt="XLS 2.2" class="th-img" />
+                    </th>
+                    <th>
+                        <img src="../img/storm.jpg" alt="Storm" class="th-img" />
+                    </th>
+                </thead>
+
+                <tbody>
+                    <form action="lancamento.html" method="post" id="comparacao">
+                        <tr>
+                            <td>
+                                <label for="xl-cabine">
+                                    <input type="checkbox" name="comparar" id="xl-cabine" value="xl-cabine" />
+                                    <span>
+                                        <dfn>XL Cabine Simples 2.2 Diesel 4X4 MT 2022</dfn>
+                                        <small class="preco-sugerido">Preço Sugerido: R$ 183.850</small>
+                                    </span>
+                                </label>
+                                <img src="../img/info_icon.svg" alt="Saiba mais" class="info-icon" />
+                            </td>
+                            <td>
+                                <label for="xls-diesel">
+                                    <input type="checkbox" name="comparar" id="xls-diesel" value="xls-diesel" />
+                                    <span>
+                                        <dfn>XLS 2.2 Diesel 4X4 AT 2022</dfn>
+                                        <small class="preco-sugerido">Preço Sugerido: R$ 220.690</small>
+                                    </span>
+                                </label>
+                                <img src="../img/info_icon.svg" alt="Saiba mais" class="info-icon" />
+                            </td>
+                            <td>
+                                <label for="storm">
+                                    <input type="checkbox" name="comparar" id="storm" value="storm" />
+                                    <span>
+                                        <dfn>Storm 3.2 Diesel 4X4 AT 2022</dfn>
+                                        <small class="preco-sugerido">Preço Sugerido: R$ 222.790</small>
+                                    </span>
+                                </label>
+                                <img src="../img/info_icon.svg" alt="Saiba mais" class="info-icon" />
+                            </td>
+                        </tr>
+                    </form>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                    <td colspan="3">
+                        <button form="comparacao" type="submit">Comparar agora</button>
+                    </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <span id="social-media">
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank" rel="noopener noreferrer" class="sm-icon">
+                <img src="../img/fb_icon.svg" alt="Facebook" />
+            </a>
+            <a href="https://www.youtube.com/@fordbrasil" target="_blank" rel="noopener noreferrer" class="sm-icon">
+                <img src="../img/yt_icon.svg" alt="Youtube" />
+            </a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank" rel="noopener noreferrer" class="sm-icon">
+                <img src="../img/ig_icon.svg" alt="Instagram" />
+            </a>
+        </span>
+
+        <span id="copyright">
+            <small>
+                <a
+                href="https://www.ford.com.br/copyright/"
+                rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                    &copy; 2026 Ford Brasil | Viva o Novo. Todos os direitos reservados.
+                </a>
+            </small>
+            <img src="../img/ford_footer_icon.svg" alt="Logo da Ford">
+        </span>
+
+    </footer>
+    
+</body>
+
+</html>

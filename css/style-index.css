@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 5%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#head-icon {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1351d8;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1b357e;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+section dl {
+    text-align: center;
+    max-width: 1440px;
+    width: 100%;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+section dd {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+footer {
+    background-color: #1b357e;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.sm-icon img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.sm-icon:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #1b357e;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: relative;
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+}
+
+#copyright small {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#copyright small:hover {
+    cursor: pointer;
+}
+
+#copyright img {
+    height: 32px;
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #head-icon {
+        position: static;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #copyright {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #copyright small {
+        position: static;
+        transform: none;
+        white-space: normal;
+    }
+}

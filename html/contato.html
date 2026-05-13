@@ -1,0 +1,95 @@
+<!DOCTYPE html />
+
+<html lang="pt-BR">
+
+<head>
+    <meta name="author" content="Samille Neves" />
+    <meta name="description" content="Queremos te ouvir! Entre em contato conosco." />
+    <meta name="keywords" content="Ford, Brasil, contato, ajuda">
+
+    <title>Ford Brasil | Contato</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/ford_footer_icon.svg" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style-contato.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1 hidden>Contato — Ford Brasil</h1>
+
+        <a href="index.html">
+            <img src="../img/ford_head_icon.svg" alt="Logo da Ford" id="head-icon" />
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="lancamento.html">Lançamento</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <img src="../img/storm.jpg" alt="Foto da Storm" />
+            
+            <form action="contato.html" method="post">
+                <h2>Sobre você</h2>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required />
+                <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required />
+                <input type="tel" name="telefone" id="telefone" placeholder="Insira seu número de telefone" pattern="[0-9]{11}" title="Padrão: DDD9número" required />
+                <select name="motivo-contato" id="motivo-contato" title="motivo do contato" required>
+                    <option value="" hidden>Tipo de contato</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="solicitação">Solicitação</option>
+                </select>
+                <textarea name="mensagem" id="mensagem" placeholder="Deixe-nos sua mensagem aqui" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <span id="social-media">
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank" rel="noopener noreferrer" class="sm-icon">
+                <img src="../img/fb_icon.svg" alt="Facebook" />
+            </a>
+            <a href="https://www.youtube.com/@fordbrasil" target="_blank" rel="noopener noreferrer" class="sm-icon">
+                <img src="../img/yt_icon.svg" alt="Youtube" />
+            </a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank" rel="noopener noreferrer" class="sm-icon">
+                <img src="../img/ig_icon.svg" alt="Instagram" />
+            </a>
+        </span>
+
+        <span id="copyright">
+            <small>
+                <a
+                href="https://www.ford.com.br/copyright/"
+                rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                    &copy; 2026 Ford Brasil | Viva o Novo. Todos os direitos reservados.
+                </a>
+            </small>
+            <img src="../img/ford_footer_icon.svg" alt="Logo da Ford">
+        </span>
+
+    </footer>
+    
+</body>
+
+</html>
